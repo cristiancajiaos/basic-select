@@ -1,1 +1,16 @@
-<p>layout works!</p>
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <form>
+      <label>Foo</label>
+      <select class="form-control" name="foo" [(ngModel)]="bar">
+        <option *ngFor="let number of foo" [value]="number.value">
+          {{number.name}}
+        </option>
+      </select>
+    </form>
+  </div>
+</div>
+
+<hr/>
+
+<p>Bar: {{bar}}</p>
